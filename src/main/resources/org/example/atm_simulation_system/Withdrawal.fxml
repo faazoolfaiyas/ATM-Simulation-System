@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" style="-fx-background-image: url('icon.png'); -fx-background-color: #31363F;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.atm_simulation_system.Withdrawal_Controller">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="503.0" style="-fx-background-color: #DFF5FF; -fx-background-radius: 12;">
+         <VBox.margin>
+            <Insets bottom="10.0" top="25.0" />
+         </VBox.margin>
+         <children>
+            <Label layoutX="178.0" layoutY="60.0" text="NF BANK">
+               <font>
+                  <Font name="Lahore Gurmukhi Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_withdraw" layoutX="147.0" layoutY="333.0" mnemonicParsing="false" onAction="#perform_withdraw" prefHeight="52.0" prefWidth="208.0" style="-fx-background-color: #31363F;" text="Withdraw" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="DIN Alternate Bold" size="21.0" />
+               </font>
+            </Button>
+            <Label fx:id="withdraw_msg" alignment="CENTER" contentDisplay="TOP" layoutX="2.0" layoutY="255.0" lineSpacing="1.0" prefHeight="52.0" prefWidth="500.0" textAlignment="CENTER" textFill="#0003ffcc">
+               <font>
+                  <Font name="Helvetica Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_cancel" layoutX="170.0" layoutY="435.0" mnemonicParsing="false" onAction="#switch_back_home" prefHeight="39.0" prefWidth="163.0" style="-fx-background-color: #31363F;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="DIN Alternate Bold" size="21.0" />
+               </font>
+            </Button>
+            <TextField fx:id="amount_in" layoutX="135.0" layoutY="203.0" prefHeight="30.0" prefWidth="239.0" promptText="amount">
+               <font>
+                  <Font name="Charter Bold" size="15.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Label contentDisplay="CENTER" layoutX="900.0" layoutY="700.0" prefHeight="1.0" prefWidth="297.0" text="Copyright © 2024 Niroj and Faazool. All rights reserved." textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Italic" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
