@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class AccountDetailsFinder {
 
-    private static final String URL = "jdbc:postgresql://localhost:5432/atm_database";
+    private static final String URL = "jdbc:postgresql://localhost:5432/postgres";
     private static final String USERNAME = "postgres";
     private static final String PASSWORD = "111111";
 
